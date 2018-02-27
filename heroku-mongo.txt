@@ -18,20 +18,4 @@ add 2 then edit key(url | locallhost/online url)
 {{url}}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 heroku logs
