@@ -4,3 +4,6 @@ heroku addons:create mongolab:sandbox
 heroku config
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp2'); //in db 
+
+git push 
+git push heroku master
