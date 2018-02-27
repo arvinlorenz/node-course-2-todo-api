@@ -1,3 +1,4 @@
+SET UP MONGODB IN HEROKU
 
 heroku create
 heroku addons:create mongolab:sandbox
@@ -7,3 +8,30 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp2'
 
 git push 
 git push heroku master
+
+
+
+
+POSTMAN ENVIRONMENT
+manage environment
+add 2 then edit key(url | locallhost/online url)
+{{url}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+heroku logs
