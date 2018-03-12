@@ -69,6 +69,17 @@ UserSchema.methods.generateAuthToken = function() {
 	});
 };
 
+UserSchema.methods.removeToken = function(token) {
+	var user = this;
+
+	return user.update({
+		$pull: {
+			tokens: {token}
+		}
+	});
+
+};
+
 //.static model method while .methods  - instance method
 //model method
 // User.findByToken
@@ -97,7 +108,7 @@ UserSchema.statics.findByToken = function(token) {
 		'_id': decoded._id,
 		'tokens.token': token,
 		'tokens.access': 'auth'
-	}); //return so we could use then in server
+	}); //return so we could chain result in authenticate.js
 };
 
 
