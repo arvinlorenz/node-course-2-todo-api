@@ -29,5 +29,29 @@ JWTSECRET
 heroku config - get heroku mongodb uri
 
 heroku config:set NAME=Arvin - set value pair
-heroku config:get Name - get
+heroku config:get NAME - get
 heroku config:unset NAME
+
+
+
+ROBOMONGO CONNECT TO HEROKU DB
+heroku config:get MONGODB_URI
+mongodb://heroku_xxfvvmpc:camgjor9fha79ai81nsagj12gj@ds115446.mlab.com:15446/heroku_xxfvvmpc
+HTTP PROTOCOL://USERNAME:PASSWORD@ADDRESS:PORT/DATABASE
+to be set in ROboMongo
+
+
+
+
+
+
+
+
+
+
+POSTMAN ADVANCE - setting environment variable, from return x-auth
+
+var token = postman.getResponseHeader('x-auth');
+
+postman.setEnvironmentVariable('x-auth', token);
+
