@@ -19,3 +19,15 @@ add 2 then edit key(url | locallhost/online url)
 
 
 heroku logs
+
+
+
+
+HEROKU ENVIRONMENT 
+JWTSECRET
+
+heroku config - get heroku mongodb uri
+
+heroku config:set NAME=Arvin - set value pair
+heroku config:get Name - get
+heroku config:unset NAME
